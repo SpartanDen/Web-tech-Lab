@@ -189,7 +189,26 @@
             <button type="submit"><i class="fas fa-pen-fancy"></i> Register</button>
         </form>
     </div>
-    <script src="script.js"></script>
+    <script>
+        document.getElementById('registrationForm').addEventListener('submit', function (event) {
+            event.preventDefault();
+            
+          
+            const alerts = document.querySelectorAll('.alert');
+            let hasError = false;
+            
+            alerts.forEach(alert => {
+                if (alert.textContent !== '') {
+                    hasError = true;
+                }
+            });
+            
+          
+            if (!hasError) {
+                alert('Registration complete! Thank you for registering.');
+            }
+        });
+    </script>
 </body>
 
 </html>
