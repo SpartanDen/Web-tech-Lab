@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>History Page Counter</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <header>
+            <h1>Journey Through Time</h1>
+            <p>See how many times you have visited the history!</p>
+        </header>
+
+        <div class="hitcount-section">
+           
+            
+            <div class="hitcount-message">
+                Discover how many times you have stepped into the past!
+            </div>
+
+            <!-- Button to check visit count -->
+            <form action="http://localhost:8080/5e/trackVisits" method="POST">
+                <button type="submit">Check Your Journey</button>
+            </form>
+        </div>
+
+        <footer>
+            <p>Powered by Time &amp; Code</p>
+        </footer>
+    </div>
+</body>
+</html>

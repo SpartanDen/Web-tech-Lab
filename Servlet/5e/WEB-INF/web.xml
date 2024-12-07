@@ -1,0 +1,11 @@
+<web-app>
+    <servlet>
+        <servlet-name>trackVisits</servlet-name>
+        <servlet-class>trackVisits</servlet-class>
+    </servlet>
+
+    <servlet-mapping>
+        <servlet-name>trackVisits</servlet-name>
+        <url-pattern>/trackVisits</url-pattern>
+    </servlet-mapping>
+</web-app>

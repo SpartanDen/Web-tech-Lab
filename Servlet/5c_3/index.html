@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Historical Events</title>
+    <style>
+        body {
+            font-family: 'Georgia', serif;
+            background-color: #f4f1ea;
+            color: #4e342e;
+            text-align: center;
+            padding: 20px;
+        }
+        h1 {
+            color: #3b3b3b;
+            margin-bottom: 20px;
+        }
+        .event {
+            margin: 15px 0;
+            padding: 15px 30px;
+            background-color: #8d6e63;
+            color: #fff;
+            border-radius: 10px;
+            display: inline-block;
+            cursor: pointer;
+            text-decoration: none;
+            font-size: 20px;
+            font-weight: bold;
+            transition: transform 0.3s, background-color 0.3s;
+        }
+        .event:hover {
+            background-color: #5d4037;
+            transform: scale(1.05);
+        }
+    </style>
+</head>
+<body>
+    <h1>Choose a Historical Event</h1>
+    <form action="HistoryDetailsServlet" method="post">
+        <input type="hidden" name="eventName" value="French Revolution">
+        <button type="submit" class="event">French Revolution</button>
+    </form>
+    <form action="HistoryDetailsServlet" method="post">
+        <input type="hidden" name="eventName" value="World War II">
+        <button type="submit" class="event">World War II</button>
+    </form>
+    <form action="HistoryDetailsServlet" method="post">
+        <input type="hidden" name="eventName" value="Industrial Revolution">
+        <button type="submit" class="event">Industrial Revolution</button>
+    </form>
+</body>
+</html>

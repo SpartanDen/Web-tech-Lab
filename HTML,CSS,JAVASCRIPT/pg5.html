@@ -1,0 +1,171 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>History Enthusiast Registration</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <style>
+        body {
+            font-family: 'Arial', sans-serif;
+            background: linear-gradient(135deg, #3e2723, #5d4037);
+            margin: 0;
+            padding: 0;
+            color: #2f2f2f;
+        }
+          .container {
+            width: 90%;
+            max-width: 800px;
+            margin: 50px auto;
+            background: white;
+            padding: 40px;
+            border-radius: 12px;
+            box-shadow: 0 10px 25px rgba(0, 0, 0, 0.3);
+            border: 1px solid #d3b8ae;
+            font-size: 1.1em;
+        }
+        h1 {
+            text-align: center;
+            font-size: 2.5em;
+            color: #3e2723;
+            margin-bottom: 30px;
+            font-weight: 700;
+        }
+        label {
+            display: block;
+            margin: 12px 0 8px;
+            font-size: 1.1em;
+            color: #3e2723;
+        }
+        input[type="text"],
+        input[type="number"],
+        input[type="email"],
+        textarea,
+        select {
+            width: 100%;
+            padding: 12px 15px;
+            margin-bottom: 10px;
+            border: 1px solid #8c614d;
+            border-radius: 6px;
+            font-size: 1em;
+            background: #ffffff;
+            color: #3e2723;
+            transition: all 0.3s ease;
+        }
+        input[type="text"]:focus,
+        input[type="number"]:focus,
+        input[type="email"]:focus,
+        textarea:focus,
+        select:focus {
+            border-color: #af7a58;
+            outline: none;
+            background: #f1e3d3;
+        }
+        textarea {
+            resize: none;
+            min-height: 120px;
+        }
+        button {
+            width: 100%;
+            background-color: #6d4c41;
+            color: #fff;
+            padding: 14px 0;
+            border: none;
+            border-radius: 6px;
+            cursor: pointer;
+            font-size: 1.1em;
+            transition: background-color 0.3s ease;
+            margin-top: 10px;
+        }
+        button:hover {
+            background-color: #5d4037;
+        }
+        .icon {
+            position: absolute;
+            right: 10px;
+            top: 35px;
+            color: #8c614d;
+        }
+        .alert {
+            color: #d97a67;
+            margin: 5px 0;
+            font-size: 0.9em;
+        }
+        body::before {
+            content: "";
+            position: absolute;
+            top: 0;
+            left: 0;
+            right: 0;
+            bottom: 0;
+            z-index: -1;
+            background-image: url('https://www.transparenttextures.com/patterns/woven.png');
+            opacity: 0.3;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1><i class="fas fa-history"></i> Are You a History Enthusiast?</h1>
+        <form id="registrationForm">
+            <label for="name"><i class="fas fa-user icon"></i> Full Name (Letters only):</label>
+            <input type="text" id="name" name="name" required maxlength="50" placeholder="Enter your full name">
+            <div id="nameAlert" class="alert"></div>
+            <label for="email"><i class="fas fa-envelope icon"></i> Email:</label>
+            <input type="email" id="email" name="email" required placeholder="Enter your email">
+            <div id="emailAlert" class="alert"></div>
+            <label for="age"><i class="fas fa-birthday-cake icon"></i> Age (18-100):</label>
+            <input type="number" id="age" name="age" required min="18" max="100" placeholder="Enter your age">
+            <div id="ageAlert" class="alert"></div>
+            <label for="historicalPeriod"><i class="fas fa-book icon"></i> Favorite Historical Period:</label>
+            <select id="historicalPeriod" name="historicalPeriod" required>
+                <option value="" disabled selected>Select a period</option>
+                <option value="ancient">Ancient History</option>
+                <option value="medieval">Medieval History</option>
+                <option value="renaissance">Renaissance</option>
+                <option value="modern">Modern History</option>
+            </select>
+            <div id="periodAlert" class="alert"></div>
+            <label for="researchMethod"><i class="fas fa-search icon"></i> Preferred Research Method:</label>
+            <select id="researchMethod" name="researchMethod" required>
+                <option value="" disabled selected>Select a research method</option>
+                <option value="books">Books</option>
+                <option value="online">Online Research</option>
+                <option value="archives">Archives</option>
+                <option value="museums">Museum Visits</option>
+            </select>
+            <div id="researchMethodAlert" class="alert"></div>
+            <label for="historicalInterest"><i class="fas fa-landmark icon"></i> Specific Area of Interest (Max. 100 characters):</label>
+            <input type="text" id="historicalInterest" name="historicalInterest" required maxlength="100"
+                placeholder="e.g., World Wars, Egyptian History">
+            <div id="interestAlert" class="alert"></div>
+            <label for="historicalWork"><i class="fas fa-briefcase icon"></i> Previous Work Related to History:</label>
+            <input type="text" id="historicalWork" name="historicalWork" required maxlength="100"
+                placeholder="e.g., Historian, Museum Curator">
+            <div id="workAlert" class="alert"></div>
+            <label for="historicalResearch"><i class="fas fa-check-circle icon"></i> Conducted Formal Historical Research?</label>
+            <select id="historicalResearch" name="historicalResearch" required>
+                <option value="" disabled selected>Select an option</option>
+                <option value="yes">Yes</option>
+                <option value="no">No</option>
+            </select>
+            <div id="researchAlert" class="alert"></div>
+            <label for="description"><i class="fas fa-pencil-alt icon"></i> Why Are You Interested in History? (Min. 20 characters):</label>
+            <textarea id="description" name="description" required minlength="20" maxlength="200"
+                placeholder="Share your passion for history..."></textarea>
+            <div id="descriptionAlert" class="alert"></div>
+            <label for="favoriteHistoricalFigure"><i class="fas fa-users icon"></i> Favorite Historical Figure:</label>
+            <input type="text" id="favoriteHistoricalFigure" name="favoriteHistoricalFigure" required maxlength="50"
+                placeholder="e.g., Julius Caesar, Cleopatra">
+            <div id="figureAlert" class="alert"></div>
+            <label for="historicalArtifact"><i class="fas fa-archive icon"></i> Favorite Historical Artifact:</label>
+            <input type="text" id="historicalArtifact" name="historicalArtifact" required maxlength="50"
+                placeholder="e.g., The Rosetta Stone, The Mona Lisa">
+            <div id="artifactAlert" class="alert"></div>
+            <button type="submit"><i class="fas fa-pen-fancy"></i> Register</button>
+        </form>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>

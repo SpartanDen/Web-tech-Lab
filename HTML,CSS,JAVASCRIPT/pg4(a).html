@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>World Cultures & Information</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-icons/1.8.1/font/bootstrap-icons.min.css">
+    <script src="https://cdn.tailwindcss.com"></script>
+    <style>
+        body {
+            font-family: 'Georgia', serif;
+            background-color: #121212; 
+            color: #e0e0e0; 
+            margin: 0;
+            padding: 0;
+        }
+        header {
+            background-color: #1e1e1e; 
+            color: #e0e0e0;
+        }
+        header h1 {
+            font-size: 2.5rem;
+            font-family: 'Times New Roman', serif;
+            margin: 0;
+            padding: 20px;
+        }
+        .btn-custom {
+            background-color: #333333; 
+            color: #e0e0e0;
+            border: 2px solid #333333;
+            transition: background-color 0.3s, border-color 0.3s;
+        }
+        .btn-custom:hover {
+            background-color: #555555; 
+            border-color: #555555;
+        }
+        .btn {
+            transition: background-color 0.3s ease, border-color 0.3s ease;
+        }
+        .card {
+            background-color: #1c1c1c; 
+            border: 1px solid #2c2c2c;
+            color: #e0e0e0;
+        }
+        .card img {
+            object-fit: cover;
+            border-bottom: 1px solid #2c2c2c;
+        }
+        .card:hover {
+            box-shadow: 0 8px 24px rgba(0, 0, 0, 0.7); 
+            transform: translateY(-8px); 
+            transition: transform 0.3s, box-shadow 0.3s;
+        }
+        .icon {
+            color: #e0e0e0;
+            font-size: 1.5rem;
+            margin-right: 10px;
+        }
+        footer {
+            background-color: #1e1e1e;
+            color: #e0e0e0;
+            padding: 20px;
+            text-align: center;
+        }
+        .container {
+            padding: 0 1.5rem;
+        }
+    </style>
+</head>
+<body>
+    <header class="text-center shadow-lg">
+        <h1><i class="bi bi-globe"></i> Explore World Cultures</h1>
+    </header>
+    <main class="container mx-auto my-8">
+        <section class="text-center mb-12">
+            <h2 class="text-2xl font-bold mb-4">Discover Countries & Their Cultures</h2>
+            <p class="text-gray-400">Explore famous countries, their cultures, cuisines, famous places, and historical significance in a modern visual format.</p>
+        </section>
+        <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+            <div class="card shadow-lg rounded-lg overflow-hidden">
+                <img src="image usa.jpg" alt="United States" class="w-full h-48">
+                <div class="p-6">
+                    <h3 class="font-bold text-xl mb-2"><i class="bi bi-flag icon"></i> United States</h3>
+                    <p><i class="bi bi-globe icon"></i> Continent: North America</p>
+                    <p><i class="bi bi-building icon"></i> Famous For: Statue of Liberty, Grand Canyon</p>
+                    <p><i class="bi bi-people icon"></i> Famous People: George Washington, Steve Jobs</p>
+                    <a href="https://en.wikipedia.org/wiki/United_States" class="btn btn-custom mt-4"><i class="bi bi-info-circle"></i> Learn More</a>
+                </div>
+            </div>
+            <div class="card shadow-lg rounded-lg overflow-hidden">
+                <img src="image canada.jpg" alt="Canada" class="w-full h-48">
+                <div class="p-6">
+                    <h3 class="font-bold text-xl mb-2"><i class="bi bi-flag icon"></i> Canada</h3>
+                    <p><i class="bi bi-globe icon"></i> Continent: North America</p>
+                    <p><i class="bi bi-building icon"></i> Famous For: Niagara Falls, CN Tower</p>
+                    <p><i class="bi bi-people icon"></i> Famous People: Justin Trudeau, Celine Dion</p>
+                    <a href="https://en.wikipedia.org/wiki/Canada" class="btn btn-custom mt-4"><i class="bi bi-info-circle"></i> Learn More</a>
+                </div>
+            </div>
+            <div class="card shadow-lg rounded-lg overflow-hidden">
+                <img src="image south america.jpg" alt="South America" class="w-full h-48">
+                <div class="p-6">
+                    <h3 class="font-bold text-xl mb-2"><i class="bi bi-flag icon"></i> South America</h3>
+                    <p><i class="bi bi-globe icon"></i> Continent: South America</p>
+                    <p><i class="bi bi-building icon"></i> Famous For: Amazon Rainforest, Christ the Redeemer</p>
+                    <p><i class="bi bi-people icon"></i> Famous People: Pele, Paulo Coelho</p>
+                    <a href="https://en.wikipedia.org/wiki/South_America" class="btn btn-custom mt-4"><i class="bi bi-info-circle"></i> Learn More</a>
+                </div>
+            </div>
+            <div class="card shadow-lg rounded-lg overflow-hidden">
+                <img src="image europe.jpeg" alt="Europe" class="w-full h-48">
+                <div class="p-6">
+                    <h3 class="font-bold text-xl mb-2"><i class="bi bi-flag icon"></i> Europe</h3>
+                    <p><i class="bi bi-globe icon"></i> Continent: Europe</p>
+                    <p><i class="bi bi-building icon"></i> Famous For: Eiffel Tower, Louvre Museum</p>
+                    <p><i class="bi bi-people icon"></i> Famous People: Napoleon Bonaparte, Coco Chanel</p>
+                    <a href="https://en.wikipedia.org/wiki/Western_Europe" class="btn btn-custom mt-4"><i class="bi bi-info-circle"></i> Learn More</a>
+                </div>
+            </div>
+            <div class="card shadow-lg rounded-lg overflow-hidden">
+                <img src="image africa.jpeg" alt="Africa" class="w-full h-48">
+                <div class="p-6">
+                    <h3 class="font-bold text-xl mb-2"><i class="bi bi-flag icon"></i> Africa</h3>
+                    <p><i class="bi bi-globe icon"></i> Continent: Africa</p>
+                    <p><i class="bi bi-building icon"></i> Famous For: Table Mountain, Kruger National Park</p>
+                    <p><i class="bi bi-people icon"></i> Famous People: Nelson Mandela, Desmond Tutu</p>
+                    <a href="https://en.wikipedia.org/wiki/Africa" class="btn btn-custom mt-4"><i class="bi bi-info-circle"></i> Learn More</a>
+                </div>
+            </div>
+            <div class="card shadow-lg rounded-lg overflow-hidden">
+                <img src="image japan.jpg" alt="Japan" class="w-full h-48">
+                <div class="p-6">
+                    <h3 class="font-bold text-xl mb-2"><i class="bi bi-flag icon"></i> Japan</h3>
+                    <p><i class="bi bi-globe icon"></i> Continent: Asia</p>
+                    <p><i class="bi bi-building icon"></i> Famous For: Mount Fuji, Tokyo Tower</p>
+                    <p><i class="bi bi-people icon"></i> Famous People: Akira Kurosawa, Haruki Murakami</p>
+                    <a href="https://en.wikipedia.org/wiki/Japan" class="btn btn-custom mt-4"><i class="bi bi-info-circle"></i> Learn More</a>
+                </div>
+            </div>
+        </div>
+        <div class="text-center mt-12">
+            <a href="https://en.wikipedia.org/wiki/World_history" class="btn btn-lg btn-custom"><i class="bi bi-box-arrow-right"></i> Discover More</a>
+        </div>
+    </main>
+    <footer>
+        <p>&copy; 2024 World Cultures & Information. All rights reserved.</p>
+    </footer>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+
+</html>

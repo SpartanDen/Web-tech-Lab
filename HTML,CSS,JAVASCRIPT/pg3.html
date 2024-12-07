@@ -1,0 +1,243 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>World Cultures & Information</title>
+    <link rel="stylesheet" href="styles.css">
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        body {
+            font-family: 'Georgia', serif;
+            background-color: #2c2a26;
+            color: #e4d8b4;
+            line-height: 1.8;
+            background-image: url('background.jpg');
+            background-size: cover;
+            background-attachment: fixed;
+        }
+        header {
+            background-color: #403c36;
+            color: #e4d8b4;
+            padding: 20px;
+            text-align: center;
+            border-bottom: 5px solid #a48860;
+        }
+        header h1 {
+            font-size: 3em;
+            font-family: 'Times New Roman', Times, serif;
+            margin-bottom: 10px;
+            text-shadow: 2px 2px #1e1c18;
+        }
+        main {
+            padding: 40px 20px;
+            max-width: 1200px;
+            margin: 0 auto;
+        }
+        section#info {
+            background: rgba(56, 52, 46, 0.9);
+            padding: 30px;
+            border-radius: 15px;
+            box-shadow: 0 0 20px rgba(0, 0, 0, 0.5);
+        }
+        section#info h2 {
+            color: #a48860;
+            font-family: 'Courier New', Courier, monospace;
+            font-size: 2.5em;
+            margin-bottom: 20px;
+            text-align: center;
+        }
+        table {
+            width: 100%;
+            margin-top: 20px;
+            border-collapse: collapse;
+            font-size: 1.1em;
+        }
+        th, td {
+            padding: 15px;
+            text-align: left;
+            border-bottom: 2px solid #a48860;
+        }
+        th {
+            background-color: #403c36;
+            color: #e4d8b4;
+            font-family: 'Courier New', Courier, monospace;
+            font-size: 1.5em;
+            text-shadow: 1px 1px #1e1c18;
+        }
+        td a {
+            color: #e4d8b4;
+            text-decoration: none;
+            font-weight: bold;
+            transition: color 0.3s ease;
+        }
+        td a:hover {
+            color: #a48860;
+        }
+        tbody tr {
+            transition: background-color 0.3s ease;
+        }
+        tbody tr:hover {
+            background-color: rgba(164, 136, 96, 0.2);
+            cursor: pointer;
+        }
+        tbody tr img {
+            max-width: 120px;
+            height: auto;
+            border-radius: 8px;
+            border: 3px solid #a48860;
+            cursor: pointer;
+            transition: transform 0.3s ease;
+        }
+       tbody tr img:hover {
+            transform: scale(1.1);
+        }
+        @media (max-width: 768px) {
+            header h1 {
+                font-size: 2.5em;
+            }
+            section#info h2 {
+                font-size: 2em;
+            }
+            th, td {
+                font-size: 0.9em;
+                padding: 10px 12px;
+            }
+            tbody tr img {
+                max-width: 100px;
+            }
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Explore the World's Cultures</h1>
+    </header>
+    <main>
+        <section id="info">
+            <h2>Country and Continent Information</h2>
+            <table>
+                <thead>
+                    <tr>
+                        <th>Country</th>
+                        <th>Continent</th>
+                        <th>Food</th>
+                        <th>Culture</th>
+                        <th>Famous People</th>
+                        <th>Materials</th>
+                        <th>Famous Places</th>
+                        <th>Image</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td><a href="https://en.wikipedia.org/wiki/United_States">United States</a></td>
+                        <td>North America</td>
+                        <td>Burger, Hotdog</td>
+                        <td>Diverse, Innovative</td>
+                        <td>George Washington, Steve Jobs</td>
+                        <td>Ores,Opal</td>
+                        <td>Statue of Liberty, Grand Canyon</td>
+                        <td><a href="https://en.wikipedia.org/wiki/United_States"><img src="image usa.jpg" alt="United States"></a></td>
+                    </tr>
+                    <tr>
+                        <td><a href="https://en.wikipedia.org/wiki/Canada">Canada</a></td>
+                        <td>North America</td>
+                        <td>Poutine, Maple Syrup</td>
+                        <td>Multicultural, Friendly</td>
+                        <td>Justin Trudeau, Celine Dion</td>
+                        <td>Rare minerals</td>
+                        <td>Niagara Falls, CN Tower</td>
+                        <td><a href="https://en.wikipedia.org/wiki/Canada"><img src="image canada.jpg" alt="Canada"></a></td>
+                    </tr>
+                    <tr>
+                        <td><a href="https://en.wikipedia.org/wiki/South_America">South America</a></td>
+                        <td>South America</td>
+                        <td>Feijoada, Caipirinha</td>
+                        <td>Carnival, Samba</td>
+                        <td>Pele, Paulo Coelho</td>
+                        <td>Iron Ore, Coffee</td>
+                        <td>Amazon Rainforest, Christ the Redeemer</td>
+                        <td><a href="https://en.wikipedia.org/wiki/South_America"><img src="image south america.jpg" alt="South America"></a></td>
+                    </tr>
+                    <tr>
+                        <td><a href="https://en.wikipedia.org/wiki/Western_Europe">Europe</a></td>
+                        <td>Europe</td>
+                        <td>Baguette, Croissant</td>
+                        <td>Elegant, Artistic</td>
+                        <td>Napoleon Bonaparte, Coco Chanel</td>
+                        <td>Wine, Perfume</td>
+                        <td>Eiffel Tower, Louvre Museum</td>
+                        <td><a href="https://en.wikipedia.org/wiki/Western_Europe"><img src="image europe.jpeg" alt="Europe"></a></td>
+                    </tr>
+                    <tr>
+                        <td><a href="https://en.wikipedia.org/wiki/Africa">Africa</a></td>
+                        <td>Africa</td>
+                        <td>Biltong, Braai</td>
+                        <td>Diverse Cultures, Vibrant Cities</td>
+                        <td>Nelson Mandela, Desmond Tutu</td>
+                        <td>Gold, Diamonds</td>
+                        <td>Table Mountain, Kruger National Park</td>
+                        <td><a href="https://en.wikipedia.org/wiki/Africa"><img src="image africa.jpeg" alt="Africa"></a></td>
+                    </tr>
+                    <tr>
+                        <td><a href="https://en.wikipedia.org/wiki/Russia">Russia</a></td>
+                        <td>Europe/Asia</td>
+                        <td>Borscht, Blini</td>
+                        <td>Rich History, Diverse</td>
+                        <td>Leo Tolstoy, Vladimir Putin</td>
+                        <td>Oil, Natural Gas</td>
+                        <td>Red Square, Siberia</td>
+                        <td><a href="https://en.wikipedia.org/wiki/Russia"><img src="image russia.jpg" alt="Russia"></a></td>
+                    </tr>
+                    <tr>
+                        <td><a href="https://en.wikipedia.org/wiki/South_Korea">South Korea</a></td>
+                        <td>Asia</td>
+                        <td>Kimbap, Kimchi</td>
+                        <td>Modern, Technological</td>
+                        <td>BTS, Kim Jong-un</td>
+                        <td>Electronics, Textiles</td>
+                        <td>Seoul, DMZ</td>
+                        <td><a href="https://en.wikipedia.org/wiki/South_Korea"><img src="image korea.jpg" alt="South Korea"></a></td>
+                    </tr>
+                    <tr>
+                        <td><a href="https://en.wikipedia.org/wiki/Japan">Japan</a></td>
+                        <td>Asia</td>
+                        <td>Sushi, Ramen</td>
+                        <td>Traditional, Technological</td>
+                        <td>Akira Kurosawa, Haruki Murakami</td>
+                        <td>Automobiles, Electronics</td>
+                        <td>Mount Fuji, Tokyo Tower</td>
+                        <td><a href="https://en.wikipedia.org/wiki/Japan"><img src="image japan.jpg" alt="Japan"></a></td>
+                    </tr>
+                    <tr>
+                        <td><a href="https://en.wikipedia.org/wiki/Australia">Australia</a></td>
+                        <td>Oceania</td>
+                        <td>Vegemite, Meat Pie</td>
+                        <td>Laid-back, Adventurous</td>
+                        <td>Hugh Jackman, Kylie Minogue</td>
+                        <td>Coal, Wool</td>
+                        <td>Sydney Opera House, Great Barrier Reef</td>
+                        <td><a href="https://en.wikipedia.org/wiki/Australia"><img src="image australia.jpg" alt="Australia"></a></td>
+                    </tr>
+                    <tr>
+                        <td><a href="https://en.wikipedia.org/wiki/New_Zealand">New Zealand</a></td>
+                        <td>Oceania</td>
+                        <td>Pavlova, Hangi</td>
+                        <td>Friendly, Outdoorsy</td>
+                        <td>Sir Edmund Hillary, Peter Jackson</td>
+                        <td>Dairy, Wool</td>
+                        <td>Milford Sound, Hobbiton</td>
+                        <td><a href="https://en.wikipedia.org/wiki/New_Zealand"><img src="image new zealand.jpg" alt="New Zealand"></a></td>
+                    </tr>
+                </tbody>
+            </table>
+        </section>
+    </main>
+</body>
+</html>

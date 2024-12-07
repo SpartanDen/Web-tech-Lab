@@ -1,0 +1,117 @@
+body {
+    font-family: 'Georgia', serif;
+    background-color: #bfa18d;
+    color: #3e2a47;
+    margin: 0;
+    padding: 0;
+}
+
+header {
+    background-color: #6e4f34;
+    color: #fff;
+    padding: 60px 20px;
+    text-align: center;
+}
+
+header h1 {
+    font-size: 4rem;
+    font-weight: bold;
+}
+
+header p {
+    font-size: 1.2rem;
+}
+
+.container {
+    padding: 50px 30px;
+}
+
+.btn {
+    padding: 10px 20px;
+    margin-top: 10px;
+    border: none;
+    cursor: pointer;
+    border-radius: 5px;
+    text-decoration: none;
+    color: white;
+}
+
+.btn-primary {
+    background-color: #6e4f34;
+}
+
+.btn-warning {
+    background-color: #f4c542;
+    color: #3e2a47;
+}
+
+.btn-danger {
+    background-color: #d9534f;
+}
+
+.btn-info {
+    background-color: #5bc0de;
+}
+
+.civilizations {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 20px;
+    padding: 20px 0;
+}
+
+.card {
+    background-color: #d1a15b;
+    border-radius: 10px;
+    overflow: hidden;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.3);
+    cursor: pointer;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.card:hover {
+    transform: scale(1.05);
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.4);
+}
+
+.card-img {
+    object-fit: cover;
+    height: 250px;
+    width: 100%;
+}
+
+.card-body {
+    padding: 20px;
+    background-color: #3e2a47;
+    color: #fff;
+    text-align: left;
+}
+
+.card-body h3 {
+    font-size: 1.5rem;
+}
+
+.card-body p {
+    font-size: 1rem;
+    margin: 10px 0;
+}
+
+.details-img {
+    width: 100%;
+    height: auto;
+    border-radius: 10px;
+}
+
+.details-content {
+    padding: 20px;
+    background-color: #3e2a47;
+    color: #fff;
+    border-radius: 10px;
+}
+
+footer {
+    background-color: #6e4f34;
+    color: white;
+    text-align: center;
+    padding: 20px;
+}

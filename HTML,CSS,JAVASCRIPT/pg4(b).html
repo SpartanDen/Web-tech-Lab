@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Event Handling</title>
+    <link rel="stylesheet" href="Ex 4.css">
+    <script src="Ex4.js" defer></script>
+</head>
+<body onclick="toggleBackgroundColor()">
+    <h1>Event Handling</h1>
+
+    <section>
+        <h2>Current Time</h2>
+        <form name="timeForm">
+            <input type="text" name="timeInput" readonly>
+            <button type="button" onclick="displayCurrentTime()">Show Time</button>
+        </form>
+    </section>
+
+    <section>
+        <h2>Register Here</h2>
+        <form name="registrationForm" method="post" action="#" onsubmit="return validateRegistrationForm()">
+            <input type="text" name="email" placeholder="Email" onblur="validateEmail(this.value)">
+            <input type="text" name="username" placeholder="Username">
+            <button type="submit">Register</button>
+        </form>
+    </section>
+
+    <section>
+        <h2>Hover Text Box</h2>
+        <div id="hoverBox" onmouseover="mouseOver()" onmouseout="mouseOut()">Hover over this text</div>
+    </section>
+
+    <section>
+        <h2>Hover Image </h2>
+        <div id="imageText"></div>
+        <img src="world map.jpg" alt="World Map" width="300px" height="auto" onmouseover="displayImageText()" onmouseout="clearImageText()">
+    </section>
+</body>
+</html>

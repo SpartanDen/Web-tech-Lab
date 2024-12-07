@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>History Periods</title>
+    <style>
+        body {
+            font-family: 'Georgia', serif;
+            background-color: #f8f4e3;
+            color: #4e342e;
+            text-align: center;
+            padding: 20px;
+        }
+        h1 {
+            color: #3b3b3b;
+            margin-bottom: 30px;
+        }
+        .period {
+            display: inline-block;
+            margin: 20px;
+            padding: 15px 30px;
+            background-color: #8d6e63;
+            color: #fff;
+            border-radius: 10px;
+            text-decoration: none;
+            font-size: 20px;
+            transition: transform 0.3s, background-color 0.3s;
+        }
+        .period:hover {
+            transform: scale(1.1);
+            background-color: #5d4037;
+        }
+    </style>
+</head>
+<body>
+    <h1>Explore Historical Periods</h1>
+    <a href="HistoryServlet?period=Ancient" class="period">Ancient History</a>
+    <a href="HistoryServlet?period=Medieval" class="period">Medieval History</a>
+    <a href="HistoryServlet?period=Modern" class="period">Modern History</a>
+</body>
+</html>

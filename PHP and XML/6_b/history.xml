@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<history>
+    <civilization>
+        <name>Africa</name>
+        <date>3000 BC</date>
+        <description>Ancient civilizations across the African continent, including Egypt, Carthage, and the Kingdom of Kush.</description>
+        <image>africa.jpg</image>
+    </civilization>
+    <civilization>
+        <name>China</name>
+        <date>2100 BC</date>
+        <description>One of the world's oldest civilizations, known for its inventions, philosophy, and dynasties.</description>
+        <image>china.jpg</image>
+    </civilization>
+    <civilization>
+        <name>Egypt</name>
+        <date>3100 BC</date>
+        <description>Ancient Egypt, famous for its pyramids, pharaohs, and the Nile River.</description>
+        <image>egypt.jpg</image>
+    </civilization>
+    <civilization>
+        <name>Greece</name>
+        <date>800 BC</date>
+        <description>The birthplace of democracy, philosophy, and the Olympic Games.</description>
+        <image>greece.jpg</image>
+    </civilization>
+    <civilization>
+        <name>Inca</name>
+        <date>1438 AD</date>
+        <description>The Inca Empire, with its advanced agriculture, engineering, and road systems in the Andes Mountains.</description>
+        <image>inca.jpg</image>
+    </civilization>
+    <civilization>
+        <name>India</name>
+        <date>3300 BC</date>
+        <description>Ancient India, known for its innovations in mathematics, science, and spirituality.</description>
+        <image>india.jpg</image>
+    </civilization>
+    <civilization>
+        <name>Indus Valley</name>
+        <date>3300 BC</date>
+        <description>The Indus Valley Civilization, known for its advanced urban planning and drainage systems.</description>
+        <image>indus_valley.jpg</image>
+    </civilization>
+    <civilization>
+        <name>Japan</name>
+        <date>660 BC</date>
+        <description>The rich cultural heritage of Japan, including its feudal era, samurai warriors, and Shinto religion.</description>
+        <image>japan.jpg</image>
+    </civilization>
+    <civilization>
+        <name>Mesopotamia</name>
+        <date>3500 BC</date>
+        <description>Often referred to as the cradle of civilization, home to the Sumerians, Akkadians, and Babylonians.</description>
+        <image>mesopotamia.jpg</image>
+    </civilization>
+    <civilization>
+        <name>Persia</name>
+        <date>550 BC</date>
+        <description>The Persian Empire, known for its vast size, architectural wonders, and cultural achievements.</description>
+        <image>persia.jpg</image>
+    </civilization>
+    <civilization>
+        <name>Rome</name>
+        <date>753 BC</date>
+        <description>The Roman Empire, one of the most influential civilizations in history, with a lasting impact on law, government, and warfare.</description>
+        <image>rome.jpg</image>
+    </civilization>
+<civilization><name>Maya</name><date>550BC</date><description>Mayan civilization is a mongolian civilization which gave a part of the mongolian heritage</description><image>maya.jpg</image></civilization><civilization><name>aryan</name><date>1800</date><description>part of indian civilization &#13;
+</description><image>china.jpg</image></civilization></history>
